@@ -12,7 +12,7 @@ function Banner() {
                 <h1 className='description'>This page is dedicated for netflix but under construction</h1>
             </div>
         </div>
-      
+        <div className="fade_bottom"></div>
     </div>
   )
 }
