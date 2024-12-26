@@ -20,3 +20,7 @@
     margin-right: 10px;
 
 }
+
+.smallPoster{
+    max-height: 100px;
+}
