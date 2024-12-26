@@ -7,7 +7,7 @@ import { API_KEY, IMAGE_URL } from '../../constants/constants'
 
 
 
-function RowPost() {
+function RowPost(props) {
   const [movies, setMovies] = useState([])
 
   useEffect(() => {
@@ -23,10 +23,10 @@ function RowPost() {
 
   return (
     <div className='row'>
-      <h2>Netflix Originals</h2>
+      <h2>{props.title}</h2>
       <div className='posters'>
         {movies.map((obj) =>
-            <img className='poster' src={`${IMAGE_URL+obj.backdrop_path}`} alt="poster" />  
+            <img className={props.isSmall ? 'smallPoster' : 'poster'} src={`${IMAGE_URL+obj.backdrop_path}`} alt="poster" />  
         )}
     
       </div>
